@@ -12,7 +12,6 @@ export const Search = () => {
 
     fetch(
       `https://api.themoviedb.org/3/search/movie?api_key=54bfb02cf2215e470f278910726420df&language=en-US&page=1&include_adult=false&query=${e.target.value}`
-
     )
       .then((res) => res.json())
       .then((data) => {

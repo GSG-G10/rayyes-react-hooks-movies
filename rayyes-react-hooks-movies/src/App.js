@@ -18,7 +18,7 @@ function App() {
           <Route exact path="/Search">
             <Search />
           </Route>
-          </Switch>
+        </Switch>
       </Router>
     </GlobalProvider>
   );

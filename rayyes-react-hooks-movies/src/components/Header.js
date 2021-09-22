@@ -9,14 +9,13 @@ export const Header = () => {
           <div className="Name">
             <Link to="/">Rayyes-React-Movies</Link>
           </div>
-
           <ul className="nav-links">
             <li>
               <Link to="/">Favourites</Link>
             </li>
             <li>
               <Link to="/Search" className="btn btn-main">
-               Search
+                Search
               </Link>
             </li>
           </ul>

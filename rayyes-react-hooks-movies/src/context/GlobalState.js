@@ -11,9 +11,7 @@ export const GlobalContext = createContext(initialState);
 
 // provider components
 export const GlobalProvider = (props) => {
- 
   const [state, setState] = useState(initialState);
- 
 
   useEffect(() => {
     localStorage.setItem("Favourites", JSON.stringify(state.Favourites || []));
@@ -22,8 +20,9 @@ export const GlobalProvider = (props) => {
   // action
   const addMovieToFavourites = (movie) => {
     setState((prevState) => {
-      console.log({prevState})
-      return  {Favourites:[...prevState.Favourites, movie]}});
+      console.log({ prevState });
+      return { Favourites: [...prevState.Favourites, movie] };
+    });
   };
 
   return (
