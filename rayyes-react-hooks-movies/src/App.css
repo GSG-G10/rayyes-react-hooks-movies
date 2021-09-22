@@ -22,6 +22,11 @@ body {
 }
 .search-Input{
   width: 100%;
+  height: 100%;
+  font-size: larger;
+}
+.Search{
+  height: 40px;
 }
 
 
@@ -95,6 +100,9 @@ header .nav-links {
   display: flex;
   align-items: center;
 }
+.title{
+  color: #c4c4c4;
+}
 
 header .nav-links li {
   display: inline-block;
@@ -135,6 +143,7 @@ header .nav-links li:last-child {
 .result-card {
   display: flex;
   margin-bottom: 20px;
+  color: #c4c4c4;
 }
 
 .result-card .poster-wrapper img,

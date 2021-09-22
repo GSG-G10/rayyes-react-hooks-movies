@@ -4,16 +4,13 @@ import { GlobalContext } from "../context/GlobalState";
 export const ResultCard = ({ movie }) => {
   const { addMovieToFavourites } = useContext(GlobalContext);
 
-
   return (
     <div className="result-card">
       <div className="poster-wrapper">
-        
-          <img
-            src={`https://image.tmdb.org/t/p/w200${movie.poster_path}`}
-            alt={`${movie.title} Poster`}
-          />
-        
+        <img
+          src={`https://image.tmdb.org/t/p/w200${movie.poster_path}`}
+          alt={`${movie.title} Poster`}
+        />
       </div>
 
       <div className="info">

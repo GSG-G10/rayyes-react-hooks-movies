@@ -10,12 +10,12 @@ export const Home = () => {
       <div className="container">
         <div className="header">
           <h1 className="heading"> Home </h1>
-          </div>
-          <div className="movie-grid">
-            {Favourites.map((movie) => (
-              <MovieCard movie={movie} key={movie.id}  />
-            ))}
-          </div>
+        </div>
+        <div className="movie-grid">
+          {Favourites.map((movie) => (
+            <MovieCard movie={movie} key={movie.id} />
+          ))}
+        </div>
       </div>
     </div>
   );
